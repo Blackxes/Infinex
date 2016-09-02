@@ -1,0 +1,2 @@
+# Infinex
+Simple MVC Framework
