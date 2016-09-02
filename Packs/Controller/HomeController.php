@@ -26,7 +26,7 @@
 		//
 		public function indexAction()
 		{
-			return "<p>Userdefined Homecontroller</p>";
+			return "<p>Userdefined Homecontroller!</p>";
 		}
 
 		//_____________________________________________________________________________________________________
