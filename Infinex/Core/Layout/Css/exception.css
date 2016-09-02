@@ -1,0 +1,50 @@
+/*
+* basic css - standards
+*
+* Author: Alexander Bassov
+*/
+
+/* standards */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { overflow: hidden; width: 100%; height: 100%; font-size: 10px; font-family: Verdana; font-weight: 400; background-color: #fff; }
+ul, li { margin: 0; padding: 0; list-style-type: none; }
+div { overflow: hidden; }
+
+h1, h2, h3, h4, h5, h6, p, span, label { margin-bottom: 0.5rem; font-size: 20px; }
+span, label, p { font-size: 13px; }
+h1, h2, h3, h4, h5, h6 { margin: 1rem 0; font-weight: 400; text-align: center; }
+h1 { font-size: 30px; }
+
+
+.error { color: #f00 !important; font-weight: 600; }
+.warning { color: #ff0 !important; }
+.valid { color: #0f0 !important; }
+
+.row { width: 100%; }
+.row > * { padding-right: 0.5rem; float: left; }
+.row > *:last-child { padding-right: 0; }
+
+.col-1 { width: 100%; max-width: 8.33%; }
+.col-2 { width: 100%; max-width: 16.66%; }
+.col-3 { width: 100%; max-width: 25%; }
+.col-4 { width: 100%; max-width: 33.33%; }
+.col-5 { width: 100%; max-width: 41.67%; }
+.col-6 { width: 100%; max-width: 50%; }
+.col-7 { width: 100%; max-width: 58.33%; }
+.col-8 { width: 100%; max-width: 66.66%; }
+.col-9 { width: 100%; max-width: 75%; }
+.col-10 { width: 100%; max-width: 83.33%; }
+.col-11 { width: 100%; max-width: 91.66%; }
+.col-12 { width: 100%; max-width: 100%; }
+
+.ix-container { margin: 0 auto; width: 800px; }
+.ix-exception-item-wrap { padding: 1rem; }
+.ix-exception-item { margin-bottom: 1rem; padding: 0.5rem; overflow: hidden; border: 1px solid #666; }
+.ix-exception-item * { color: #000; }
+.ix-exception-item .ix-ex-stopcount { margin-top: 50%; transform: translateY(-50%); text-align: center; }
+.ix-exception-item .ix-ex-file, .ix-ex-file { color: #82ad04; }
+.ix-exception-item .ix-ex-function { color: #757502; }
+.ix-exception-item .ix-ex-class { color: #ad0202; }
+.ix-exception-item .ix-ex-args { color: #565656; }
+.ix-exception-item .row:last-child > * { margin-bottom: 0; }

@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>###TITLE###</title>
+		<link rel="stylesheet" href="###BASIC_CSS###">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<head>
+	<body>
+		<div class="ix-container">
+			<h1>Exception</h1>
+			<div class="ix-exception-item-wrap">
+				<div class="ix-exception-item">
+					<div class="col-12 row">
+						<label class="col-2">Message:</label>
+						<p class="ix-ex-message col-10 error">###EX_MESSAGE###</p>
+					</div>
+					<div class="col-12 row">
+						<label class="col-2">Code:</label>
+						<p class="ix-ex-code col-10">###EX_CODE###</p>
+					</div>
+					<div class="col-12 row">
+						<label class="col-2">File:</label>
+						<p class="ix-ex-file col-10">###EX_FILE###</p>
+					</div>
+					<div class="col-12 row">
+						<label class="col-2">Line:</label>
+						<p class="ix-ex-line col-10">###EX_LINE###</p>
+					</div>
+				</div>
+			</div>
+			<div class="ix-exception-trace">
+				<h2>Trace</h2>
+				<ul class="ix-exception-item-wrap">
+					<!-- ###EX_TRACE### -->
+					<li class="ix-exception-item row">
+						<div class="col-1">
+							<p class="ix-ex-stopcount col-10">###STOPCOUNT###</p>
+						</div>
+						<div class="col-11">
+							<div class="col-12 row">
+								<label class="col-2">File:</label>
+								<p class="ix-ex-file col-10">###FILE###</p>
+							</div>
+							<div class="col-12 row">
+								<label class="col-2">Line:</label>
+								<p class="ix-ex-line col-10">###LINE###</p>
+							</div>
+							<div class="col-12 row">
+								<label class="col-2">Call:</label>
+								<p class="ix-ex-class col-10"><span class="ix-ex-class">###CLASS###</span><span class="ix-ex-type">###TYPE###</span><span class="ix-ex-function">###FUNCTION###</span>(<span class="ix-ex-args">###ARGS###</span>)</p>
+							</div>
+						</div>
+					</li>
+					<!-- /###EX_TRACE###/ -->
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
