@@ -5,7 +5,7 @@
 *	this is where everything starts
 *	and where you can get everything you need
 *	to make you application glorious!
-*	 
+*	
 *	Author: Alexander Bassov - 21.06.2016
 */
 
