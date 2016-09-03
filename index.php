@@ -12,5 +12,5 @@
 	$instance = \Infinex\Core\Bootstrap\Bootstrap::getInstance()
 		->Init()
 		->getService("router")
-		->parseRequest();
+		->parseRequest(); 
 	//_________________________________________________________________________________________________________
