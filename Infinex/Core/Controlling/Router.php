@@ -22,7 +22,7 @@
 		private static $controllerGET 		= null; 			// contains the controller from the get params
 		private static $actionGET 			= null;				// contains the action from the get params
 		private static $controller 			= null;				// contains the requested controller instance
-		private static $action 				= null;				// contains the requested action string
+		private static $action 				= null;				// contains the requested action string 			
 
 		//_____________________________________________________________________________________________________
 		// constructor
@@ -33,6 +33,9 @@
 			$this->actionGET 			= "";
 			$this->controller 			= new \Infinex\Core\Controlling\BaseController();
 			$this->action 				= "";
+
+			$this->controller_http404 	= $this->getPack('controller.HTTP404Controller');
+			$this->controller_default 	= $this->getPack('controller.HomeController');
 		}
 		
 		//_____________________________________________________________________________________________________
@@ -52,6 +55,7 @@
 				$this->InitController();
 				$this->InitAction();
 			}
+			// when either the controller or action is not correct
 			catch (\Infinex\Core\Debug\IX_Exception $exception)
 			{
 				// when its not a 404 then print out exception

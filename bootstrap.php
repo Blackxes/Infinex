@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <?php
 
 /*
-*	the sexy and essential bootstrap class
-*	this is where everything starts
-*	and where you can get everything you need
-*	to make you application glorious!
+*	file in order to define some pre-stuff before the actual
+*	bootstrap initialization begins
 *	
 *	Author: Alexander Bassov - 21.06.2016
 */
@@ -25,32 +22,3 @@
 	require_once(IX_ROOT . "/Infinex/Core/Bootstrap/Bootstrap.php");
 	
 	//_________________________________________________________________________________________________________
-=======
-<?php
-
-/*
-*	the sexy and essential bootstrap class
-*	this is where everything starts
-*	and where you can get everything you need
-*	to make you application glorious!
-*	
-*	Author: Alexander Bassov - 21.06.2016
-*/
-
-	//_________________________________________________________________________________________________________
-	// namespaces
-	/* ... */
-	
-	//_________________________________________________________________________________________________________
-	// constants
-	//
-	// Root directory
-	define("IX_ROOT", __DIR__, 1);
-	
-	//_________________________________________________________________________________________________________
-	// includes
-	require_once(IX_ROOT . "/Infinex/Core/Bootstrap/Bootstrap.php");
-	
-	//_________________________________________________________________________________________________________
->>>>>>> 73952a55108ef9ecdf3a59b13e8183cc83289640
-	//
