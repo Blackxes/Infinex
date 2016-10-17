@@ -54,6 +54,7 @@
 			{
 				$this->InitController();
 				$this->InitAction();
+				
 			}
 			// when either the controller or action is not correct
 			catch (\Infinex\Core\Debug\IX_Exception $exception)
