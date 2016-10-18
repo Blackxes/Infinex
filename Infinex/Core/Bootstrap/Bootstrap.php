@@ -35,6 +35,9 @@
 		
 		// service handler
 		static private $serviceHandler = null;
+
+		// package handler
+		static private $packageHandler = null;
 		
 		// current loaded controller
 		static private $controllerHandler = null;
@@ -50,7 +53,7 @@
 			self::InitInstance();						// instance
 			self::buildEnvironment();					// build up contants and system files
 			self::buildSystemConfiguration();			// builds up the system configuration
-			self::InitServices();						// initializes services
+			self::InitHandler();						// initializes handler
 			
 			//
 			return self::$instance;
@@ -69,8 +72,8 @@
 		}
 		
 		//_____________________________________________________________________________________________________
-		// initializes the services
-		static private function InitServices()
+		// initializes handler
+		static private function InitHandler()
 		{
 			// create and initialize service handler
 			self::$serviceHandler = new \Infinex\Core\Handler\ServiceHandler();
@@ -123,6 +126,8 @@
 			// initialize when null
 			if (self::$instance === null)
 				self::initInstance();
+
+			
 			
 			//
 			return self::$instance;
