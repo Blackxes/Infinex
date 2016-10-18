@@ -73,7 +73,7 @@
 		static private function InitServices()
 		{
 			// create and initialize service handler
-			self::$serviceHandler = new \Infinex\Core\Classes\ServiceHandler();
+			self::$serviceHandler = new \Infinex\Core\Handler\ServiceHandler();
 			self::$serviceHandler->initialize();
 			return ((self::$serviceHandler !== null) ? true : false);
 		}
