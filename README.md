@@ -1,2 +1,2 @@
 # Infinex
-Simple MVC Framework
+Simple CMS
